@@ -1,0 +1,39 @@
+@mixin font-size($size-value: 1.3, $line-height: '', $letter-spacing: 0) {
+    font-size: $size-value / 10 + rem;
+    @if $line-height != '' {
+        line-height: $line-height / 10 + rem;
+    }
+    @if $letter-spacing != '' {
+        letter-spacing: $letter-spacing / 1000 + em;
+    }
+}
+
+@mixin oldmob {
+    @media screen and (max-width: 320px) {
+        @content;
+    }
+}
+
+@mixin mob {
+    @media screen and (max-width: 599px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin smalldesktop {
+    @media screen and (max-width: 1280px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: 1281px) {
+        @content;
+    }
+}
