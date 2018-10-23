@@ -7,7 +7,7 @@
 */
 $version = wp_get_theme()['Version'];
 $template_location_uri = get_template_directory_uri();
-$template_location = $template_location;
+$template_location = get_template_directory();
 $environment = getenv("APPLICATION_ENV");
 
 

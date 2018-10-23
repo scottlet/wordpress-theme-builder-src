@@ -6,7 +6,7 @@
 function wptb_scripts()
 {
     global $version;
-    global $template_location;
+    global $template_location_uri;
     global $environment;
 
     $ver = null;
@@ -17,13 +17,13 @@ function wptb_scripts()
 
     wp_enqueue_style(
         'wptb-style',
-        $template_location. '/css/@@@name@@@-'. $version .'.min.css',
+        $template_location_uri. '/css/@@@name@@@-'. $version .'.min.css',
         null,
         $ver
     );
     wp_enqueue_script(
         'wptb-js',
-        $template_location . '/js/@@@name@@@-'. $version .'.min.js',
+        $template_location_uri . '/js/@@@name@@@-'. $version .'.min.js',
         null,
         $ver,
         true
