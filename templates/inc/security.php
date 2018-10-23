@@ -28,3 +28,5 @@ add_filter('the_generator', 'wptb_remove_generator');
 add_action('widgets_init', 'unregister_default_wp_widgets');
 add_action('wp_enqueue_scripts', 'wptb_scripts', 1);
 add_action('wp_footer', 'wptb_deregister_scripts');
+add_action('wp_footer', 'print_log');
+add_action('admin_footer', 'print_log');

@@ -1,7 +1,7 @@
 <?php
 /**
  * Enqueue scripts and styles.
- * @@@name@@@ is replaced at run/build time by gulp with the name in CONSTS.
+ * @@@name@@@ is replaced at run/build time by gulp with the name in options.js.
  */
 function wptb_scripts()
 {
@@ -48,7 +48,7 @@ function wptb_deregister_scripts()
 }
 
 /*
-Removes the generator tag with WP version numbers. Hackes will use this to find weak and old WP installs
+Removes the generator tag with WP version numbers. Hackers can use this to find weak and old WP installs
 */
 function wptb_remove_generator()
 {
@@ -56,7 +56,7 @@ function wptb_remove_generator()
 }
 
 /*
-Show less info to users on failed login for security.
+Show less info to users on failed login for security reasons.
 (Will not let a valid username be known.)
 */
 function show_less_login_info()
