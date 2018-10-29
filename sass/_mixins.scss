@@ -8,32 +8,39 @@
     }
 }
 
+//Breakpoints
+$oldmob: __oldmobile__px;
+$mob: __mobile__px;
+$smalltablet: __smalltablet__px;
+$tablet: __tablet__px;
+$smalldesktop: __smalldesktop__px;
+
 @mixin oldmob {
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: $oldmob) {
         @content;
     }
 }
 
 @mixin mob {
-    @media screen and (max-width: 599px) {
+    @media screen and (max-width: $mob) {
+        @content;
+    }
+}
+
+@mixin smalltablet {
+    @media screen and (max-width: $smalltablet) {
         @content;
     }
 }
 
 @mixin tablet {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: $tablet) {
         @content;
     }
 }
 
 @mixin smalldesktop {
-    @media screen and (max-width: 1280px) {
-        @content;
-    }
-}
-
-@mixin desktop {
-    @media screen and (min-width: 1281px) {
+    @media screen and (max-width: $smalldesktop) {
         @content;
     }
 }
