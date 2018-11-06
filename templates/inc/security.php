@@ -22,11 +22,6 @@ remove_action('wp_head', 'wp_shortlink_wp_head', 10, 0);
 remove_action('wp_print_styles', 'print_emoji_styles');
 
 add_filter('login_errors', 'show_less_login_info');
-add_filter('script_loader_tag', 'wptb_defer_attribute', 10, 3);
 add_filter('the_generator', 'wptb_remove_generator');
 
 add_action('widgets_init', 'unregister_default_wp_widgets');
-add_action('wp_enqueue_scripts', 'wptb_scripts', 1);
-add_action('wp_footer', 'wptb_deregister_scripts');
-add_action('wp_footer', 'print_log');
-add_action('admin_footer', 'print_log');

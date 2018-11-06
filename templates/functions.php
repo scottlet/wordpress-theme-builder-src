@@ -26,3 +26,10 @@ console_log($version);
 if ($environment == "development") {
     remove_filter('template_redirect', 'redirect_canonical');
 }
+
+add_filter('script_loader_tag', 'wptb_defer_attribute', 10, 3);
+add_action('wp_enqueue_scripts', 'wptb_scripts', 1);
+add_action('admin_enqueue_scripts', 'wptb_admin_scripts', 1);
+add_action('wp_footer', 'wptb_deregister_scripts');
+add_action('wp_footer', 'print_log');
+add_action('admin_footer', 'print_log');
