@@ -1,11 +1,9 @@
-'use strict';
+import { BREAKPOINTS, NAME, VERSION } from '../options.js';
 
-var options = require('../options.js');
-
-var CONSTS = {
-    BREAKPOINTS: options.BREAKPOINTS,
-    NAME: options.NAME,
-    VERSION: options.VERSION
+const CONSTS = {
+    BREAKPOINTS,
+    NAME,
+    VERSION
 };
 
-module.exports = CONSTS;
+export default CONSTS;

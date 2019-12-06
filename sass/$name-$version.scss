@@ -1,8 +1,10 @@
-@import 'normalize';
 @import 'mixins';
+@import 'variables';
 @import 'colours';
+@import 'wp-overrides';
 @import 'fonts';
 @import 'main';
+@import 'editor-classes';
 @import 'head';
 @import 'nav';
 @import 'footer';
