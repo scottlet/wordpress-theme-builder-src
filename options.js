@@ -1,8 +1,6 @@
-'use strict';
+const pkg = require('./package.json');
 
-var pkg = require('./package.json');
-
-var OPTIONS = {
+const OPTIONS = {
     NAME: pkg.name,
     FULL_NAME: 'Wordpress Theme Builder',
     VERSION: pkg.version,
