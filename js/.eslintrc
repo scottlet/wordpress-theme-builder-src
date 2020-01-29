@@ -138,7 +138,6 @@
                 "asyncArrow": "always"
             }
         ],
-        "key-spacing": 2,
         "keyword-spacing": 2,
         "space-before-blocks": 2,
         "strict": [

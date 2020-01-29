@@ -1,6 +1,3 @@
-/*eslint-disable no-console*/
-
-// Breakpoints
-import CONSTS from './consts'; //eslint-disable-line
-
-console.log('admin');
+import CONSTS from './consts';
+import Logger from 'log';
+Logger(`admin app, ${CONSTS.NAME}, ${CONSTS.VERSION}`);

@@ -1,5 +1,3 @@
-/*eslint-disable no-console*/
-
 import CONSTS from './consts';
-
-console.log('main app', CONSTS.NAME, CONSTS.VERSION);
+import Logger from 'log';
+Logger(`main app, ${CONSTS.NAME}, ${CONSTS.VERSION}`);
