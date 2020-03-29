@@ -1,5 +1,21 @@
 {
-	"name": "wordpress-theme-builder",
-	"version": "0.1.3",
-	"private": true
+    "name": "wordpress-theme-builder",
+    "version": "0.2.0",
+    "private": true,
+    "author": "Scott van Looy",
+    "description": "Source file that runs inside of the Wordpress Theme Builder (https://github.com/scottbert/wordpress-theme-builder) enabling you to quickly build wordpress themes.",
+    "keywords":["wordpress", "theme"],
+    "bugs": "https://github.com/scottbert/wordpress-theme-builder-src/issues",
+    "license": "GNU-GPLv3",
+    "contributors": ["Scott van Looy"],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/scottbert/wordpress-theme-builder-src.git"
+    },
+    "homepage": "https://ojoho.io",
+    "engines": {
+        "type": "node",
+        "version": "*"
+    },
+    "dependencies": {}
 }

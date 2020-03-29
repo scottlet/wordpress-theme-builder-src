@@ -23,5 +23,3 @@ remove_action('wp_print_styles', 'print_emoji_styles');
 
 add_filter('login_errors', 'show_less_login_info');
 add_filter('the_generator', 'wptb_remove_generator');
-
-add_action('widgets_init', 'unregister_default_wp_widgets');
