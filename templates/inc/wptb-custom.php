@@ -12,7 +12,7 @@ function console_log($data)
     $line = $my_caller['line'];
     //Collect logs and print them at the end
 
-    $console_logs[] = 'console.log(' . json_encode($data) . ', \'' . basename($file) . ':' . json_encode($line) . '\');';
+    $console_logs[] = 'console.log('.json_encode($data).', \''.basename($file).':'.json_encode($line).'\');';
 }
 
 function print_log()

@@ -1,4 +1,5 @@
 <?php
+// phpcs:disable PSR1.Files.SideEffects
 /**
  * Enqueue scripts and styles.
  * @@@name@@@ is replaced at run/build time by gulp with the name in options.js.
@@ -48,13 +49,13 @@ function wptb_admin_scripts()
 
 
     wp_enqueue_style(
-        'kenza-admin-style',
+        'wptb-admin-style',
         $template_location_uri. '/css/admin-'. $version .'.min.css',
         null,
         $ver
     );
     wp_enqueue_script(
-        'kenza-admin- js',
+        'wptb-admin- js',
         $template_location_uri . '/js/admin-'. $version .'.min.js',
         null,
         $ver,
