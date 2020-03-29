@@ -85,6 +85,8 @@ define('WP_DEBUG', true);
 define('WP_DEBUG_LOG', true);
 define('WP_DEBUG_DISPLAY', false);
 
+// This creates debug.log in your wp-content directory. Tail it for PHP issues.
+
 $environment = getenv("APPLICATION_ENV");
 
 if ($environment == "development") {

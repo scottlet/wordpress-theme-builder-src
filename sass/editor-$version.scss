@@ -3,12 +3,8 @@
 @import 'colours';
 @import 'wp-overrides';
 @import 'fonts';
-@import 'main';
-@import 'editor-classes';
-@import 'head';
-@import 'nav';
-@import 'footer';
 
 .wp-block-wordpress-theme-builder {
     @import 'blocks/dummyBlock';
+    @import 'blocks/dummyBlock_editor';
 }

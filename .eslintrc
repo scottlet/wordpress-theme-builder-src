@@ -1,22 +1,18 @@
 {
     "env": {
-        "browser": true,
+        "node": true,
         "es6": true
     },
     "plugins": [
-        "jsdoc",
         "import"
     ],
     "settings": {
-        "import/resolver": {
-            "node": {
-                "paths": ["/src/js/modules/"]
-            }
-        }
+        "import/resolver": "node"
     },
     "extends": "eslint:recommended",
     "parserOptions": {
-        "sourceType": "module"
+        "sourceType": "module",
+        "ecmaVersion": "2018"
     },
     "rules": {
         "array-bracket-spacing": 1,
@@ -38,7 +34,7 @@
         ],
         "complexity": [
             1,
-            9
+            6
         ],
         "consistent-return": 2,
         "dot-notation": 2,
@@ -79,7 +75,7 @@
             {
                 "enforceConst": true,
                 "ignoreArrayIndexes": true,
-                "ignore": [-1, .1, .2, .3, .4, .5, .6, .7, .8, .9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 100, 255, 256, 500, 512, 1000]
+                "ignore": [-1, .1, .2, .3, .4, .5, .6, .7, .8, .9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 50, 100, 255, 256, 500, 512, 1000]
             }
         ],
         "no-multi-spaces": 2,
@@ -111,7 +107,6 @@
         ],
         "prefer-arrow-callback": 2,
         "prefer-const": 2,
-        "no-var": 2,
         "quotes": [
             2,
             "single",
@@ -140,12 +135,13 @@
         ],
         "keyword-spacing": 2,
         "space-before-blocks": 2,
+        "no-var": 2,
         "strict": [
             2,
             "global"
         ],
         "valid-jsdoc": 2,
         "vars-on-top": 1,
-        "import/no-unresolved": [2, { "commonjs": true, ignore: ['compiledHandlebars'] }]
+        "import/no-unresolved": [2]
     }
 }

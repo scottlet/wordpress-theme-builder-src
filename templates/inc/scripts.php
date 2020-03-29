@@ -91,3 +91,5 @@ function show_less_login_info()
 {
     return "<strong>ERROR</strong>: Incorrect username or password";
 }
+
+require $template_location . '/inc/blocks.php';

@@ -5,18 +5,29 @@
     },
     "plugins": [
         "jsdoc",
-        "import"
+        "import",
+        "react",
+        "react-hooks"
     ],
     "settings": {
         "import/resolver": {
             "node": {
-                "paths": ["/src/js/modules/"]
+                "paths": ["src/js/modules/", "js/modules"]
             }
+        },
+        "react": {
+            "version": "detect"
         }
     },
-    "extends": "eslint:recommended",
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
     "parserOptions": {
-        "sourceType": "module"
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
     },
     "rules": {
         "array-bracket-spacing": 1,
@@ -86,7 +97,7 @@
         "no-multiple-empty-lines": 2,
         "no-redeclare": 1,
         "no-trailing-spaces": 2,
-        "no-underscore-dangle": 2,
+        "no-underscore-dangle": 0,
         "no-unused-expressions": 2,
         "no-unused-vars": [
             2,
@@ -146,6 +157,11 @@
         ],
         "valid-jsdoc": 2,
         "vars-on-top": 1,
-        "import/no-unresolved": [2, { "commonjs": true, ignore: ['compiledHandlebars'] }]
+        "import/no-unresolved": [2, { "commonjs": true, ignore: ['compiledHandlebars'] }],
+        "react/display-name": 0,
+        "react/prop-types": 0,
+        "react/react-in-jsx-scope": 0,
+        "react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
+        "react-hooks/exhaustive-deps": "warn" // Checks effect dependencies
     }
 }
