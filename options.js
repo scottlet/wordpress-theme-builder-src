@@ -1,9 +1,6 @@
-const pkg = require('./package.json');
+const { name, version } = require('./package.json');
 
 const OPTIONS = {
-    NAME: pkg.name,
-    FULL_NAME: 'Wordpress Theme Builder',
-    VERSION: pkg.version,
     BREAKPOINTS: {
         OLD_MOB: 320,
         MOB: 767,
@@ -11,7 +8,10 @@ const OPTIONS = {
         TABLET: 979,
         TABLET_LANDSCAPE: 1024,
         SMALL_DESKTOP: 1440
-    }
+    },
+    FULL_NAME: 'Wordpress Theme Builder',
+    NAME: name,
+    VERSION: version
 };
 
 module.exports = OPTIONS;
