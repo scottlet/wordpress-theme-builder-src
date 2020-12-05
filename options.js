@@ -9,6 +9,7 @@ const OPTIONS = {
         TABLET_LANDSCAPE: 1024,
         SMALL_DESKTOP: 1440
     },
+    BREAKPOINT_DEVELOPMENT: 'mobile-first', // exactly 'mobile-first' or 'desktop-first'
     FULL_NAME: 'Wordpress Theme Builder',
     NAME: name,
     VERSION: version
