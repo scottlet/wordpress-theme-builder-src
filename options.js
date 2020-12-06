@@ -12,7 +12,7 @@ const OPTIONS = {
     BREAKPOINT_DEVELOPMENT: 'mobile-first', // one of 'mobile-first' or 'desktop-first'
     // one of 'default', 'advanced' or 'lite'
     CSS_NANO_PRESET: process.env.NODE_ENV === 'production' ? 'advanced' : 'lite',
-    FULL_NAME: 'Wordpress Theme Builder',
+    FULL_NAME: 'WP Theme Builder example',
     NAME: name,
     VERSION: version
 };
