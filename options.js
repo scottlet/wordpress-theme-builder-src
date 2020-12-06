@@ -9,9 +9,9 @@ const OPTIONS = {
         TABLET_LANDSCAPE: 1024,
         SMALL_DESKTOP: 1440
     },
-    BREAKPOINT_DEVELOPMENT: 'mobile-first', // exactly 'mobile-first' or 'desktop-first'
+    BREAKPOINT_DEVELOPMENT: 'mobile-first', // one of 'mobile-first' or 'desktop-first'
     CSS_NANO_PRESET: 'advanced',
-    FULL_NAME: 'Wordpress Theme Builder',
+    FULL_NAME: 'Wordpress Theme Builder', // one of 'default', 'advanced' or 'lite'
     NAME: name,
     VERSION: version
 };
