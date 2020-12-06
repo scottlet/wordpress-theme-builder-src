@@ -10,8 +10,9 @@ const OPTIONS = {
         SMALL_DESKTOP: 1440
     },
     BREAKPOINT_DEVELOPMENT: 'mobile-first', // one of 'mobile-first' or 'desktop-first'
-    CSS_NANO_PRESET: 'advanced',
-    FULL_NAME: 'Wordpress Theme Builder', // one of 'default', 'advanced' or 'lite'
+    // one of 'default', 'advanced' or 'lite'
+    CSS_NANO_PRESET: process.env.NODE_ENV === 'production' ? 'advanced' : 'lite',
+    FULL_NAME: 'Wordpress Theme Builder',
     NAME: name,
     VERSION: version
 };
