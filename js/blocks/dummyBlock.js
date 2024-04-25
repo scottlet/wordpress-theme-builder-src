@@ -7,7 +7,7 @@ const {
     blockEditor: {
         InnerBlocks
     }
-} = window.wp;
+} = window['wp'];
 
 const MY_TEMPLATE = [
     ['core/cover', {
