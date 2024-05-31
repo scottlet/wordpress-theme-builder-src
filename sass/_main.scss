@@ -1,22 +1,22 @@
 html,
 body {
-    border: 0;
-    margin: 0;
-    padding: 0;
-    position: relative;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  position: relative;
 }
 
 html {
-    color: $fg;
-    font-size: 62.5%;
-    font-variant-ligatures: common-ligatures;
-    text-rendering: optimizeLegibility;
+  color: $fg;
+  font-size: 62.5%;
+  font-variant-ligatures: common-ligatures;
+  text-rendering: optimizeLegibility;
 }
 
 body {
-    @include font-size(18, 37);
-    background: $bg;
-    font-family: Helvetica, Arial, sans-serif;
-    margin: 0;
-    padding: 3rem;
+  @include font-size(18, 37);
+  background: $bg;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 3rem;
 }
