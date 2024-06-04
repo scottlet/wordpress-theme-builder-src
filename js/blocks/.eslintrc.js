@@ -1,5 +1,8 @@
 module.exports = {
-  extends: ['../.eslintrc.js'],
+  extends: ['../../.eslintrc.js'],
+  globals: {
+    JSX: true
+  },
   parserOptions: {
     sourceType: 'module',
     ecmaFeatures: {

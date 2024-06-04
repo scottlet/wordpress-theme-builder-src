@@ -10,13 +10,13 @@
   }
 }
 
-@mixin oldmob {
+@mixin oldmobile {
   @media screen and (max-width: $oldmob) {
     @content;
   }
 }
 
-@mixin mob {
+@mixin mobile {
   @media screen and (max-width: $mob) {
     @content;
   }

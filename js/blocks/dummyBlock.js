@@ -4,6 +4,7 @@ const {
   blocks,
   i18n: { __ },
   blockEditor: { InnerBlocks }
+  // eslint-disable-next-line dot-notation
 } = window['wp'];
 
 const MY_TEMPLATE = [
