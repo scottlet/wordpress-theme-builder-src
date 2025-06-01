@@ -1,6 +1,6 @@
 {
   "name": "wp-theme-builder-src-example",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "author": "Scott van Looy",
   "description": "Source file that runs inside of the Wordpress Theme Builder (https://github.com/scottlet/wordpress-theme-builder) enabling you to quickly build wordpress themes.",
@@ -23,6 +23,9 @@
     "type": "node",
     "version": "*"
   },
+  "aliases": {
+    "~/": "src/js/modules"
+  },
   "scripts": {
     "snyk": "snyk test",
     "test": "gulp test",
@@ -39,10 +42,14 @@
     "get-wordpress": "gulp getwp"
   },
   "devDependencies": {
+    "@eslint/compat": "^1.2.9",
+    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "^9.28.0",
     "eslint-plugin-prefer-smart-quotes": "^2.0.0",
-    "stylelint": "^16.6.1"
+    "globals": "^16.2.0",
+    "stylelint": "^16.20.0"
   },
   "dependencies": {
-    "eslint": "^8.57.0"
+    "eslint": "^9.28.0"
   }
 }

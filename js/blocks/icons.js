@@ -1,6 +1,6 @@
 /**
  * Renders the icon for the DummyBlock component.
- * @returns {JSX.Element} The SVG icon element.
+ * @returns {import("react").JSX.Element} The SVG icon element.
  */
 function DummyBlockIcon() {
   return (

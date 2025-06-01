@@ -94,7 +94,7 @@ if ($environment == "development") {
     define('WP_CONTENT_URL', '/wp-content');
 }
 
-define('WP_MAX_MEMORY_LIMIT', '512M');
+define('WP_MAX_MEMORY_LIMIT', '1024M');
 
 /* That's all, stop editing! Happy blogging. */
 
